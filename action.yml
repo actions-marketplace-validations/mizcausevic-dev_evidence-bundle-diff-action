@@ -1,5 +1,5 @@
 name: "Evidence Bundle Diff"
-description: "PR gate for evidence-bundle manifest changes. Retrieves the previous version of the manifest via `git show <base.sha>:<manifest-path>`, diffs against HEAD using evidence-bundle-diff, posts the structured diff as a PR comment, and fails the build on breaking changes (item hash rewritten, item removed, signature removed/changed, purpose changed, expiry shortened)."
+description: "PR gate for evidence-bundle manifest changes — diffs HEAD vs base, posts a comment, fails on breaking changes."
 author: "mizcausevic-dev"
 branding:
   icon: "git-pull-request"
